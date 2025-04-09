@@ -72,6 +72,6 @@ class HomeViewModel: ObservableObject {
         let formatter = DateComponentsFormatter()
         formatter.allowedUnits = withHours ? [.hour, .minute, .second] : [.minute, .second]
         formatter.zeroFormattingBehavior = .pad
-        return formatter.string(from: interval) ?? "--:--"
+        return formatter.string(from: interval) ?? "00:00"
     }
 }
